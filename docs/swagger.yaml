@@ -1,0 +1,26 @@
+basePath: /v1
+definitions:
+  v1.worldResponse:
+    properties:
+      message:
+        type: string
+    type: object
+host: localhost:3000
+info:
+  contact: {}
+  description: Just a simple golang boilerplate with clean arch
+  title: Golang Boilerplate
+  version: "1.0"
+paths:
+  /hello:
+    get:
+      description: Show hello world
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/v1.worldResponse'
+      summary: Hello World
+      tags:
+      - hello
+swagger: "2.0"

@@ -1,4 +1,4 @@
-package bootstrap
+package config
 
 import (
 	"log"
@@ -9,6 +9,7 @@ import (
 type Env struct {
 	ServerAddr string `mapstructure:"SERVER_ADDRESS"`
 	AppEnv     string `mapstructure:"ENVIROMENT"`
+	Port       string `mapstructure:"PORT"`
 }
 
 func NewEnv() *Env {
